@@ -13,7 +13,7 @@ public class Reservation
         [DataType(DataType.Date)]
         public DateTime DateReservation { get; set; }
 
-        [Range(1, 4, ErrorMessage = "Le nombre de personnes doit être entre 1 et 4.")]
+        [Range(1, 4)]
         public int NbPersonnes { get; set; }
         
         public int ClientFK { get; set; }

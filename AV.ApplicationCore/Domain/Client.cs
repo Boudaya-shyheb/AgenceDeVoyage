@@ -8,11 +8,10 @@ public class Client
         [Key]
         public int Identifiant { get; set; }
 
-        [Required(ErrorMessage = "Le login est obligatoire.")]
-        [StringLength(15)]
+        [Required]
         public string Login { get; set; }
 
-        [Required(ErrorMessage = "Le mot de passe est obligatoire.")]
+        [Required]
         [DataType(DataType.Password)]
         [StringLength(15)]
         public string Password { get; set; }

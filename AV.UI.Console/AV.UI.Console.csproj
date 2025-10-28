@@ -8,4 +8,8 @@
         <RootNamespace>AV.Console</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AV.ApplicationCore\AV.ApplicationCore.csproj" />
+    </ItemGroup>
+
 </Project>
