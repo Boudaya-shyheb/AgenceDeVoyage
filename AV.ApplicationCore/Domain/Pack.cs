@@ -8,16 +8,17 @@ public class Pack
 {
 
         [Key]
-        public int IdPack { get; set; }
+        public int PackId { get; set; }
 
-        [StringLength(15)]
-        public string Destination { get; set; }
+        public DateTime DateDeb { get; set; }
 
         public int Duree { get; set; }
 
         public int NbPlaces { get; set; }
         
-        public ICollection<Reservation> Reservations { get; set; }
+        public String IntitulePack { get; set; }
+        
+        public virtual ICollection<Reservation> Reservations { get; set; }
     }
 
 
